@@ -1,0 +1,15 @@
+._container {
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+._box {
+    padding: 6.4rem;
+}
+
+._skillsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}

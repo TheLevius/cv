@@ -1,0 +1,23 @@
+._container {
+
+}
+
+._box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 6.4rem;
+    font: normal normal 1.6rem/1 Roboto, Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+}
+
+._hireMe {
+    margin: 1.6rem auto;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    font: normal 500 1.6rem/1 Roboto, Helvetica, Arial, sans-serif;
+}
+

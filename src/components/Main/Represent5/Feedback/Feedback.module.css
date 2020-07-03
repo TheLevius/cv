@@ -1,0 +1,35 @@
+._form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25%;
+    margin: 0 auto;
+}
+
+._first, ._second, ._comment {
+    width: 100%;
+    min-height: 3.2rem;
+    margin: 0.8rem 0;
+    border: 0.1rem solid rgba(64, 64, 64, 1);
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.6rem;
+    background-color: rgba(37, 37, 39, 1);
+    font: normal normal 1.2rem/1 Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+._comment {
+    padding: 1.6rem;
+    border-radius: 0.4rem 0.4rem 0 0.4rem;
+    color: rgba(255, 255, 255, 0.6);
+    resize: vertical;
+}
+
+._submit {
+    margin: 0.8rem;
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.6rem;
+    font: normal 500 1.6rem/1 Roboto, Helvetica, Arial, sans-serif;
+
+}

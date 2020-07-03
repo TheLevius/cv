@@ -1,0 +1,16 @@
+._wrapper {
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: rgba(37, 37, 39, 1);
+}
+
+._container {
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+._box {
+    width: 25%;
+    display: block;
+    float: left;
+}
