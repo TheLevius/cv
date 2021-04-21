@@ -55,6 +55,7 @@ table {
 }
 
 html, body, .container {
+  width: 100%;
   min-height: 100%;
 }
 
