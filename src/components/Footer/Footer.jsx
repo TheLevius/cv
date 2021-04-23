@@ -16,7 +16,7 @@ const Footer = () => {
                             <Social/>
                             <Social/>
                         </div>
-                        <h6>© 2020 Все права по MIT</h6>
+                        <h6>© 2020 MIT</h6>
                     </div>
                 </div>
             </div>

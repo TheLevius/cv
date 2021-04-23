@@ -4,7 +4,8 @@
 }
 
 ._box {
-    padding: 6.4rem;
+    padding: 6.4rem 0.8rem;
+    overflow: hidden;
 }
 
 ._skillsWrapper {
@@ -12,4 +13,5 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    padding: 0 0.8rem;
 }

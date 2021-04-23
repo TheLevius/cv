@@ -7,9 +7,7 @@ const Header = () => {
         <header className="Header block">
             <div className={styles._wrapper}>
                 <div className={styles._container}>
-                    <div className={styles._box}>
-                        <img src="#" alt="Levius logo"/>
-                    </div>
+
                     <Navigation/>
                 </div>
             </div>

@@ -10,7 +10,7 @@
 }
 
 ._box {
-    width: 25%;
     display: block;
     float: left;
+    overflow: hidden;
 }
