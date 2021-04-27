@@ -8,6 +8,17 @@
     padding: 6.4rem 0;
     overflow: hidden;
 }
+
+._box h2 {
+    font: normal 500 1.6rem/1.5 Jost, sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+._box p {
+    font: normal 400 1.2rem/1.5 sans-serif;
+    letter-spacing: 0.05rem;
+}
+
 ._socialWrapper {
     display: flex;
     justify-content: center;

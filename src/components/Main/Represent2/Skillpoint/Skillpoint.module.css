@@ -1,0 +1,10 @@
+._basis {
+    flex-basis: 36%;
+    padding: 0.8rem 0.8rem 1.6rem;
+    margin: 0 0.4rem 1.6rem;
+}
+
+._skillDetails {
+    font: normal normal 1.2rem/1.6 sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}

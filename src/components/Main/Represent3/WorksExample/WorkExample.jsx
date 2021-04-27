@@ -1,16 +1,16 @@
 import React from 'react';
 import styles from './WorkExample.module.css';
 
-const WorkExamples = () => {
+const WorkExamples = (props) => {
     return (
         <div className="WorkExamples block">
             <div className={styles._container}>
                 <div className={styles._imgWatch}>
                     <button className={styles._btnWatch}>Смотреть</button>
                 </div>
-                <h5 className={styles._nameExample}>Название проекта</h5>
+                <h3 className={styles._nameExample}>{props.workExamples.workName}</h3>
                 <p className={styles._discrExample}>
-                    Краткое описание
+                    {props.workExamples.shortDescription}
                 </p>
             </div>
         </div>

@@ -1,3 +1,4 @@
+
 html {
   font: normal 10px/10px sans-serif;
 }
@@ -5,6 +6,8 @@ html {
 body {
   width: 100%;
   min-height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(32, 32, 32, 1);
 }
 
 .block_inline {
@@ -36,11 +39,22 @@ body {
 
 /* Typography */
 
-h5 {
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  font-weight: 600;
-  letter-spacing: 0.05rem;
+h2 {
+  font: normal 500 2.8rem/1.5 Jost, sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+h3 {
+  font: normal 500 2rem/1.5 Jost, sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
+p {
+  font: normal 400 1.6rem/1.2 'PT Sans', sans-serif;
+  color: rgba(216, 216, 216, 1)
+}
+
+img {
+  color: rgba(255, 255, 255, 1);
 }
 
 .App {

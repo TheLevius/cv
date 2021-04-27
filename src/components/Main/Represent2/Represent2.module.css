@@ -4,14 +4,15 @@
 }
 
 ._box {
-    padding: 6.4rem 0.8rem;
+    padding: 6.4rem 0;
     overflow: hidden;
 }
 
 ._skillsWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: stretch;
-    padding: 0 0.8rem;
+    align-content: flex-start;
 }

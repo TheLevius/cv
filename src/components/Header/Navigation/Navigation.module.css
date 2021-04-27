@@ -1,25 +1,29 @@
 ._container {
     display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0 0.8rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 0;
     background-color: rgba(25, 25, 0, 1);
+    list-style: none;
 }
 
 ._item {
+    margin: 0;
+    padding: 0 0.8rem;
     color: rgba(255, 255, 255, 1);
+    background-color: #79fba9;
     overflow: hidden;
 }
 
 ._linkcell {
     display: block;
-    margin: 0 0.8rem;
     border-bottom: 0.2rem solid rgba(255, 255, 255, 1);
     padding: 0.8rem 0 0.6rem;
-    overflow: hidden;
-    background-color: #61dafb;
     font: normal 500 1.6rem/1 Roboto, Helvetica, Arial, sans-serif;
     color: rgba(255, 255, 255, 1);
+    background-color: #61dafb;
     text-decoration: none;
     letter-spacing: 0.05rem;
+    overflow: hidden;
 }

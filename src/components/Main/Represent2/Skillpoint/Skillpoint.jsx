@@ -3,14 +3,14 @@ import styles from './Skillpoint.module.css';
 
 const Skillpoint = (props) => {
     return(
-        <div className="Skillpoint block">
+        <div className={`Skillpoint block ${styles._basis}`}>
             <div className={styles._container}>
                 <div className={styles._imgBox}>
                     <img src="#" alt="skills img" />
                 </div>
-                <h5 className={styles._skillName}>{props.skill || 'SKILL'}</h5>
+                <h3 className={styles._skillName}>{props.skills.skill || 'SKILL'}</h3>
                 <p className={styles._skillDetails}>
-                    Подробное описание навыка
+                    {props.skills.description}
                 </p>
             </div>
         </div>

@@ -2,6 +2,24 @@ img {
     font-size: 1rem;
     line-height: 1rem;
 }
+
+a {
+    position: relative;
+    font-size: 3.2rem;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 300ms;
+}
+
+a:hover {
+    bottom: 0.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+a:active {
+    bottom: 0;
+    color: rgba(255, 255, 255, 1);
+}
 ._wrapper {
     max-width: 3.2rem;
     margin: 0 1.6rem;

@@ -10,12 +10,18 @@
     max-width: 128rem;
     margin: 0 auto;
     padding: 6.4rem 0;
-    font: normal normal 1.6rem/1 Roboto, Helvetica, Arial, sans-serif;
+    font: normal normal 1.6rem/1 Jost, sans-serif;
     overflow: hidden;
 }
 
 ._cell {
     margin: 0 0.8rem;
+}
+._cell h1 {
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 3rem;
+
 }
 
 ._imgBox {

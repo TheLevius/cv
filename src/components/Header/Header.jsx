@@ -7,7 +7,6 @@ const Header = () => {
         <header className="Header block">
             <div className={styles._wrapper}>
                 <div className={styles._container}>
-
                     <Navigation/>
                 </div>
             </div>

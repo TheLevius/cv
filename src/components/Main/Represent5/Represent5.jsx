@@ -4,10 +4,10 @@ import Feedback from "./Feedback/Feedback";
 
 const Represent5 = () => {
     return(
-        <div className="Represent5 block dark2">
+        <div className="Represent5 block">
             <div className={styles._container}>
                 <div className={styles._box}>
-                    <h5 className={styles._}>Контакты</h5>
+                    <h3 className={styles._}>Контакты</h3>
                     <Feedback/>
                 </div>
             </div>
