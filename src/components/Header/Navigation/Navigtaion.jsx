@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Navigation.module.css';
+import styles from './Navigation.module.scss';
 
-const Navigation = () => {
+const Navigation = props => {
     const items = [
         {item: 'Главная', href: '#'},
         {item:'Скилы', href: '#'},
@@ -10,16 +10,16 @@ const Navigation = () => {
         ];
     const listItems = items.map((el, i) => {
         return (
-            <li className={styles._item} key={'' + i}>
-                <a className={styles._linkcell} href={el.href}>
+            <li className={styles.item} key={'' + i}>
+                <a className={styles.linkcell} href={el.href}>
                     {el.item}
                 </a>
             </li>
         )
     });
     return (
-        <nav className="Navigation block">
-            <ul className={styles._container}>
+        <nav className={styles.wrapper}>
+            <ul className={styles.container}>
                 {listItems}
             </ul>
         </nav>

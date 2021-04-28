@@ -1,0 +1,15 @@
+@import '../../../styles/sass/variables';
+
+.sectionHeader {
+    margin-bottom: 3rem;
+    font: normal 500 2.4rem/1.2 Jost, sans-serif;
+    letter-spacing: 0.3rem;
+    color: $textColor;
+}
+.sectionSeparator {
+    width: 5.6rem;
+    height: 0.1rem;
+    margin: 3rem auto;
+    border: none;
+    background-color: $primaryColor;
+}

@@ -1,9 +1,10 @@
-img {
-    font-size: 1rem;
-    line-height: 1rem;
+
+._wrapper {
+    max-width: 3.2rem;
+    margin: 0 1.6rem;
 }
 
-a {
+._wrapper>a {
     position: relative;
     font-size: 3.2rem;
     line-height: 1;
@@ -11,16 +12,13 @@ a {
     transition: 300ms;
 }
 
-a:hover {
+._wrapper>a:hover {
     bottom: 0.1rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
-a:active {
+._wrapper>a:active {
     bottom: 0;
     color: rgba(255, 255, 255, 1);
 }
-._wrapper {
-    max-width: 3.2rem;
-    margin: 0 1.6rem;
-}
+

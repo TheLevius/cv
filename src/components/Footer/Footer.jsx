@@ -11,7 +11,7 @@ const Footer = () => {
         {socialName: 'github', baseUrl: 'https://www.github.com/', socialId: 'TheLevius', faIconName: faGithub},
         {socialName: 'codewars', baseUrl: 'https://www.linkedin.com/in/', socialId: 'nikitalevitski', faIconName: faLinkedin}
     ];
-    const socialsLinks = socials.map((el, i) => (<Social info={el}/>));
+    const socialsLinks = socials.map((el, i) => (<Social info={el} key={'' + i}/>));
 
     return(
         <footer className="Footer block dark1">

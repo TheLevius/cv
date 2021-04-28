@@ -1,0 +1,16 @@
+@import './src/common/styles/sass/variables';
+
+.wrapper {
+    width: 100%;
+    padding: 1.6rem 0;
+    background-color: $bgColorSecond;
+    .container {
+        max-width: 128rem;
+        margin: 0 auto;
+        .box {
+            display: block;
+            float: left;
+            overflow: hidden;
+        }
+    }
+}

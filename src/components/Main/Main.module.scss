@@ -1,0 +1,14 @@
+@import './src/common/styles/sass/variables';
+
+.page {
+    overflow: hidden;
+    &>section {
+        overflow: inherit;
+        &:nth-child(odd) {
+            background-color: $bgColorFirst;
+        }
+        &:nth-child(even) {
+            background-color: $bgColorSecond;
+        }
+    }
+}

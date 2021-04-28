@@ -1,0 +1,35 @@
+.wrapper {
+    flex-basis: 36%;
+    padding: 0.8rem 0.8rem 1.6rem;
+    margin: 0 0.4rem 1.6rem;
+    .container {
+        .imgBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 8rem;
+            height: 8rem;
+            margin: 0 auto 3rem;
+            transform-origin: center;
+            transform: rotate(45deg);
+            background-color: rgba(31, 31, 32, 1);
+            .skillHolder {
+                transform-origin: center;
+                transform: rotate(-45deg);
+                .skillIcon {
+                    font-size: 3.2rem;
+                    color: rgba(78, 147, 230, 1);
+                }
+            }
+        }
+        .skillDetails {
+            font: normal normal 1.2rem/1.6 sans-serif;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+    }
+}
+
+
+
+
