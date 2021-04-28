@@ -1212,6 +1212,21 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify-icons/grommet-icons@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/grommet-icons/-/grommet-icons-1.1.0.tgz#ef688c71540ed99343b951bf9a7788dfff04eb60"
+  integrity sha512-hny1iAeXrY/oS0mDVX7VNMypVWNSMup7ZMj24SGZFFAu5xYY6AiVkDRsFtVoOjgUj05QiLws4zMA5AR1cs1N1w==
+
+"@iconify-icons/simple-icons@^1.1.22":
+  version "1.1.22"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.1.22.tgz#5949fba57d5a382b106cf90a0eef11049fc8b2a0"
+  integrity sha512-5czUaey4ZpYFvMc+ZOfXYJe8dQTpzPaCCwi0LkOHSI52sHurASUF2mI8Nj6Kbzp8RYbg02BEceUMNbT4jgfbOA==
+
+"@iconify/react@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-1.1.4.tgz#c778eddbaf196e55705d0bedff00d039dc1de8d3"
+  integrity sha512-oxq8IMOq8q3nKGiDHbQPC8FcFuBsKve68JWBo140d5LRnj0bv5TB/FE/y01ZSvEZ7PlI2HIrnb2qivPN8kTDgw==
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"

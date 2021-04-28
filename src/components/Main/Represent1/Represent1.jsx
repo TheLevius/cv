@@ -8,7 +8,7 @@ const Represent1 = () => {
             <div className={styles._container}>
                 <div className={styles._box}>
                     <div className={styles._cell}>
-                        <h1>Привет, меня зовут Никита Левицкий, я front-end разработчик</h1>
+                        <h1>Привет, меня зовут Никита Левицкий, <br />я front-end разработчик</h1>
                     </div>
                     <div className={styles._cell}>
                         <div className={styles._imgBox}>
