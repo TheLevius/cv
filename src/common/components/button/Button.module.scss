@@ -1,0 +1,47 @@
+@import './src/common/styles/sass/variables';
+
+.button {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    padding: 0.9rem 5.6rem;
+    border: 0.1rem dotted transparent;
+    margin: 1.6rem auto;
+    outline: none;
+    font: normal 400 1.4rem/1 Rubick, sans-serif;
+    text-transform: uppercase;
+    color: $textColor;
+    background-color: transparent;
+    transition: 400ms;
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 50%;
+        height: 1rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 0.1rem dotted transparent;
+        margin: auto;
+        background-color: $primaryColor;
+        transition: 200ms;
+    }
+    &:focus {
+        &::after {
+            border: 0.1rem dotted #fff;
+        }
+    }
+    &:hover, &:focus {
+        &::after {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &:active {
+        &::after {
+            background-color: rgba(60, 130, 224, 1);
+        }
+    }
+}
+

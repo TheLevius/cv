@@ -2,7 +2,7 @@
 
 .page {
     overflow: hidden;
-    &>section {
+    >section {
         overflow: inherit;
         &:nth-child(odd) {
             background-color: $bgColorFirst;
@@ -10,5 +10,6 @@
         &:nth-child(even) {
             background-color: $bgColorSecond;
         }
+
     }
 }

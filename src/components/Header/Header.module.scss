@@ -2,15 +2,12 @@
 
 .wrapper {
     width: 100%;
-    padding: 1.6rem 0;
+    padding: 0;
+    margin: 0;
     background-color: $bgColorSecond;
     .container {
         max-width: 128rem;
         margin: 0 auto;
-        .box {
-            display: block;
-            float: left;
-            overflow: hidden;
-        }
+        padding: 2.4rem 0;
     }
 }

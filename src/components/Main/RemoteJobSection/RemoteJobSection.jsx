@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './RemoteJobSection.module.scss'
 import SectionHeader from "../../../common/components/headers/SectionHeader/SectionHeader";
+import Button from '../../../common/components/button/Button';
 
 const RemoteJobSection = props => {
     return(
@@ -8,7 +9,7 @@ const RemoteJobSection = props => {
             <div className={styles.container}>
                 <div className={styles.box}>
                     <SectionHeader headerText={'Рассматриваю варианты удаленной работы'}/>
-                    <button className={styles.hireMe}>Нанять меня</button>
+                    <Button text={'Hire me'}/>
                 </div>
             </div>
         </section>

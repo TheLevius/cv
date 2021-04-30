@@ -7,6 +7,8 @@ import reactIcon from '@iconify-icons/simple-icons/react';
 import css3Icon from '@iconify-icons/simple-icons/css3';
 import html5Icon from '@iconify-icons/simple-icons/html5';
 import typescriptIcon from '@iconify-icons/simple-icons/typescript';
+import sassIcon from '@iconify-icons/simple-icons/sass';
+
 
 const SkillsSection = () => {
 
@@ -34,6 +36,11 @@ const SkillsSection = () => {
          description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true' +
                 ' generator on the Internet. It uses a dictionary of over 200 Latin words',
          skillIcon: html5Icon
+        },
+        {skill: 'SASS',
+            description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true' +
+                ' generator on the Internet. It uses a dictionary of over 200 Latin words',
+            skillIcon: sassIcon
         }
     ];
     const skillPoints = skills.map((el, i) => <Skillpoint skills={el} key={''+ i}/>);

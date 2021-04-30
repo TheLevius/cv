@@ -1,36 +1,60 @@
+@import './src/common/styles/sass/variables';
+
 .wrapper {
-    .form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 1.6rem;
+    overflow: hidden;
+    .container{
+        max-width: 128rem;
         margin: 0 auto;
-        .first, .second, .comment {
-            width: 100%;
-            min-height: 3.2rem;
-            margin: 0.8rem 0;
-            border: 0.1rem solid rgba(64, 64, 64, 1);
-            border-radius: 0.4rem;
-            padding: 0.8rem 1.6rem;
-            background-color: rgba(37, 37, 39, 1);
-            font: normal normal 1.2rem/1 Rubick, sans-serif;
-            letter-spacing: 0.05rem;
-        }
-        .comment {
-            padding: 1.6rem;
-            border-radius: 0.4rem 0.4rem 0 0.4rem;
-            color: rgba(255, 255, 255, 0.6);
-            resize: vertical;
-        }
-        .submit {
-            margin: 0.8rem;
-            border-radius: 0.4rem;
-            padding: 0.8rem 1.6rem;
-            font: normal 500 1.6rem/1 Rubick, sans-serif;
+        .box {
+
+            max-width: 57.2rem;
+            padding: 0 1.6rem;
+            margin: 0 auto;
+            .form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                .first, .second, .comment {
+                    box-sizing: border-box;
+                    width: 100%;
+                    min-height: 3.2rem;
+                    margin: 0.8rem 0;
+                    border: 0.1rem solid rgba(64, 64, 64, 0);
+                    border-radius: 0.4rem;
+                    padding: 0.8rem 1.6rem;
+                    background-color: rgba(37, 37, 39, 1);
+                    font: normal 300 1.2rem/1.5 Rubick, sans-serif;
+                    color: $contactFormTextColor;
+                    letter-spacing: 0.05rem;
+                    transition: 300ms;
+                    &:focus, &:active {
+                        outline: none;
+                        border-color: rgba(64, 64, 64, 1);
+                        color: $contactFormTextColorActive
+                    }
+                    &::placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder {
+                        color: $contactFormTextColorPlaceholder
+                    }
+                }
+                .comment {
+                    min-height: 16rem;
+                    padding: 1.6rem;
+                    border-radius: 0.4rem 0.4rem 0 0.4rem;
+                    resize: vertical;
+                }
+                .submit {
+                    margin: 0.8rem;
+                    border-radius: 0.4rem;
+                    padding: 0.8rem 1.6rem;
+                    font: normal 500 1.6rem/1 Rubick, sans-serif;
+                }
+            }
         }
     }
 }
+
 
 
 

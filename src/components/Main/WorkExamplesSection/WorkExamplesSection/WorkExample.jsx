@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WorkExampleSass.module.scss'
+import Button from '../../../../common/components/button/Button';
 
 const WorkExamples = (props) => {
 
@@ -7,7 +8,7 @@ const WorkExamples = (props) => {
         <div className="WorkExamples block">
             <div className={styles.container}>
                 <div className={styles.imgWatch} style={{backgroundImage: `url(${props.workExamples.img})`}}>
-                    <button className={styles.btnWatch}>Смотреть</button>
+                    <Button className={styles.btnWatch} type={'button'} text={'Смотреть'}/>
                 </div>
                 <div className={styles.description}>
                     <h3>{props.workExamples.workName}</h3>
