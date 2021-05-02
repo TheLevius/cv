@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 import Social from "./Social/Social";
 import { faFacebook, faVk, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
@@ -15,11 +15,11 @@ const Footer = () => {
 
     return(
         <footer className="Footer block dark1">
-            <div className={styles._wrapper}>
-                <div className={styles._container}>
-                    <div className={styles._box}>
+            <div className={styles.wrapper}>
+                <div className={styles.container}>
+                    <div className={styles.box}>
                         <h2>Никита Левицкий</h2>
-                        <div className={styles._socialWrapper}>
+                        <div className={styles.socialWrapper}>
                             {socialsLinks}
                         </div>
                         <p>© 2021 MIT License</p>

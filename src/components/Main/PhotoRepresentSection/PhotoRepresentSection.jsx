@@ -1,7 +1,13 @@
 import React, {useState} from 'react';
 import styles from './PhotoRepresentSection.module.scss';
-import avatarCv from './../../../img/avatarCv.jpg';
+import avatarCv from './../../../assets/images/jpeg/avatars/avatarCv2.jpg';
 import Particles from 'react-particles-js';
+import Fade from 'react-reveal/Fade';
+import ReactTypingEffect from 'react-typing-effect';
+import {useSpring, animated} from 'react-spring';
+
+const frameImg = (x, y) => `translate3d(${x / 5 * -1}px,${y / 5 * -1}px,0)`;
+const imgAva = (x, y) => `translate3d(${x / 8 * -1}px,${y / 8 * -1}px,0)`;
 
 const PhotoRepresentSection = props => {
 
@@ -111,21 +117,30 @@ const PhotoRepresentSection = props => {
             },
             "retina_detect": true
         }
-    )
+    );
 
     return (
-        <section className={styles.wrapper}>
-
+        <section className={styles.wrapper} >
             <div className={styles.container}>
                 <div className={styles.box}>
-                    <div className={styles.cell}>
-                        <h1>Привет, меня зовут Никита Левицкий, <br />я front-end разработчик</h1>
-                    </div>
-                    <div className={styles.cell}>
-                        <div className={styles.imgBox}>
-                            <img src={avatarCv} alt="avatar CV" />
+
+                        <div className={styles.cell}>
+                            <p><strong>Привет!</strong></p>
+                            <h1>Меня зовут <span className={styles.inlinePlank}>Никита Левицкий </span></h1>
+                            <h3>
+                            <ReactTypingEffect staticText={'и'}
+                                               text={'я React Front-end Developer.'}
+                                               speed={60}
+                            />
+                            </h3>
                         </div>
-                    </div>
+                        <div className={styles.cell}>
+                            <div className={styles.holder}>
+                                <animated.div className={styles.imgBox} style={{transform: props.params.xy.interpolate(frameImg)}}/>
+                                <animated.img className={styles.imgCv} src={avatarCv} style={{transform: props.params.xy.interpolate(imgAva)}}/>
+                            </div>
+                        </div>
+
                 </div>
             </div>
             <Particles className={styles.particles} canvasClassName={styles.particlesCanvas} params={particlesOpt} />

@@ -8,15 +8,17 @@ const Navigation = props => {
         {item:'Работы', href: '#'},
         {item:'Контакты', href: '#'}
         ];
+
     const listItems = items.map((el, i) => {
         return (
             <li className={styles.item} key={'' + i}>
-                <a className={styles.linkcell} href={el.href}>
+                <a className={styles.linkcell} href={el.href} onClick={props.onClickDoItBlur}>
                     {el.item}
                 </a>
             </li>
         )
     });
+
     return (
         <nav className={styles.wrapper}>
             <ul className={styles.container}>

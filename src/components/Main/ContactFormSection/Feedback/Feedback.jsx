@@ -10,7 +10,7 @@ const Feedback = props => {
                     <form className={styles.form}>
                         <input type="text" className={styles.first} placeholder="Name"/>
                         <input type="text" className={styles.second} placeholder="E-mail"/>
-                        <textarea className={styles.comment} placeholder="оставьте свой комментарий"/>
+                        <textarea className={styles.comment} placeholder="Оставьте свой комментарий"/>
                         <Button text={'Отправить'} type={'submit'}/>
                     </form>
                 </div>
