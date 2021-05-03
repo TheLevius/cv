@@ -8,7 +8,7 @@ import css3Icon from '@iconify-icons/simple-icons/css3';
 import html5Icon from '@iconify-icons/simple-icons/html5';
 import typescriptIcon from '@iconify-icons/simple-icons/typescript';
 import sassIcon from '@iconify-icons/simple-icons/sass';
-
+import Fade from 'react-reveal/Fade';
 
 const SkillsSection = () => {
 
@@ -43,15 +43,23 @@ const SkillsSection = () => {
             skillIcon: sassIcon
         }
     ];
-    const skillPoints = skills.map((el, i) => <Skillpoint skills={el} key={''+ i}/>);
+    const skillPoints = skills.map((el, i) => <Skillpoint skills={el}
+                                                          key={''+ i}
+                                                          delay={100 + (i * 150)}
+                                                          duration={800}
+    />);
 
     return(
         <section className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.box}>
+                    <Fade bottom>
                     <SectionHeader headerText={'Мои навыки'}/>
+                    </Fade>
                     <div className={styles.skillsWrapper}>
+
                         {skillPoints}
+
                     </div>
                 </div>
             </div>

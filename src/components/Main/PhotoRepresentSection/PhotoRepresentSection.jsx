@@ -2,12 +2,8 @@ import React, {useState} from 'react';
 import styles from './PhotoRepresentSection.module.scss';
 import avatarCv from './../../../assets/images/jpeg/avatars/avatarCv2.jpg';
 import Particles from 'react-particles-js';
-import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
-import {useSpring, animated} from 'react-spring';
-
-const frameImg = (x, y) => `translate3d(${x / 5 * -1}px,${y / 5 * -1}px,0)`;
-const imgAva = (x, y) => `translate3d(${x / 8 * -1}px,${y / 8 * -1}px,0)`;
+import {animated} from 'react-spring';
 
 const PhotoRepresentSection = props => {
 
@@ -15,10 +11,10 @@ const PhotoRepresentSection = props => {
         {
             "particles": {
                 "number": {
-                    "value": 100,
+                    "value": 1,
                     "density": {
                         "enable": true,
-                        "value_area": 1000
+                        "value_area": 15
                     }
                 },
                 "color": {
@@ -57,7 +53,7 @@ const PhotoRepresentSection = props => {
                 "line_linked": {
                     "enable": true,
                     "distance": 140,
-                    "color": "#ffffff",
+                    "color": "#efefEf",
                     "opacity": 0.3,
                     "width": 0.3
                 },
@@ -76,45 +72,7 @@ const PhotoRepresentSection = props => {
                     }
                 }
             },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 700,
-                        "line_linked": {
-                            "opacity": 0.2
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 110,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
+
             "retina_detect": true
         }
     );
@@ -129,15 +87,15 @@ const PhotoRepresentSection = props => {
                             <h1>Меня зовут <span className={styles.inlinePlank}>Никита Левицкий </span></h1>
                             <h3>
                             <ReactTypingEffect staticText={'и'}
-                                               text={'я React Front-end Developer.'}
+                                               text={'я React Front-end разработчик.'}
                                                speed={60}
                             />
                             </h3>
                         </div>
                         <div className={styles.cell}>
                             <div className={styles.holder}>
-                                <animated.div className={styles.imgBox} style={{transform: props.params.xy.interpolate(frameImg)}}/>
-                                <animated.img className={styles.imgCv} src={avatarCv} style={{transform: props.params.xy.interpolate(imgAva)}}/>
+                                <animated.div className={styles.imgBox} style={{transform: props.params.xy.to(props.frameImg)}}/>
+                                <animated.img className={styles.imgCv} src={avatarCv} style={{transform: props.params.xy.to(props.imgAva)}}/>
                             </div>
                         </div>
 
@@ -146,6 +104,7 @@ const PhotoRepresentSection = props => {
             <Particles className={styles.particles} canvasClassName={styles.particlesCanvas} params={particlesOpt} />
         </section>
     );
+
 };
 
 export default PhotoRepresentSection;

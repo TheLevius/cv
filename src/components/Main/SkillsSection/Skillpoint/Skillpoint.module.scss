@@ -1,7 +1,4 @@
 .wrapper {
-    flex-basis: 36%;
-    padding: 0.8rem 0.8rem 1.6rem;
-    margin: 0 0.4rem 1.6rem;
     .container {
         .imgBox {
             display: flex;
@@ -11,11 +8,12 @@
             height: 8rem;
             margin: 0 auto 3rem;
             transform-origin: center;
-            transform: rotate(45deg);
+            transform: rotate(-45deg);
             background-color: rgba(31, 31, 32, 1);
+
             .skillHolder {
                 transform-origin: center;
-                transform: rotate(-45deg);
+                transform: rotate(45deg);
                 .skillIcon {
                     font-size: 3.2rem;
                     color: rgba(78, 147, 230, 1);

@@ -4,6 +4,7 @@ import WorkExamples from "./WorkExamplesSection/WorkExample";
 import SectionHeader from "../../../common/components/headers/SectionHeader/SectionHeader";
 import socialNetworkImg from './../../../assets/images/svg/social-network.svg'
 import todoListImg from './../../../assets/images/svg/todo-list.svg';
+import Fade from 'react-reveal/Fade';
 
 const WorkExamplesSection = () => {
     const workExamples = [
@@ -22,16 +23,20 @@ const WorkExamplesSection = () => {
         ];
     const workExamplesList = workExamples.map((el, i) => {
         return(
-            <WorkExamples workExamples={el} key={''+ i} />
+            <WorkExamples workExamples={el} key={''+ i} duration={700 + (i * 50)} delay={200 + (i * 100)} />
         )
     });
     return(
         <section className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.box}>
-                    <SectionHeader headerText={'My Works'}/>
+                    <Fade bottom>
+                        <SectionHeader headerText={'My Works'}/>
+                    </Fade>
                     <div className={styles.workWrapper}>
+
                         {workExamplesList}
+
                     </div>
                 </div>
             </div>
