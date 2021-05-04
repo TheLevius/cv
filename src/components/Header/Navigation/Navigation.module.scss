@@ -31,11 +31,12 @@
                 overflow: hidden;
                 outline: none;
                 transition: 300ms;
+                cursor: pointer;
                 &:focus {
                     color: $textColor;
                     border-color: $primaryColor;
                 }
-                &:active {
+                &:active, .activeNavItem {
                     color: $activeLinkColor;
                 }
                 &:hover {

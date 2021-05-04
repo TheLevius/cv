@@ -45,12 +45,12 @@ const SkillsSection = () => {
     ];
     const skillPoints = skills.map((el, i) => <Skillpoint skills={el}
                                                           key={''+ i}
-                                                          delay={100 + (i * 150)}
+                                                          delay={100 + (i * 50)}
                                                           duration={800}
     />);
 
     return(
-        <section className={styles.wrapper}>
+        <section className={styles.wrapper} id={'skills'}>
             <div className={styles.container}>
                 <div className={styles.box}>
                     <Fade bottom>

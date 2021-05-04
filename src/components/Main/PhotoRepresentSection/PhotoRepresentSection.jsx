@@ -5,6 +5,9 @@ import Particles from 'react-particles-js';
 import ReactTypingEffect from 'react-typing-effect';
 import {animated} from 'react-spring';
 
+const frameImg = (x, y) => `translate3d(${x / -6}px,${y / -6}px,0)`;
+const imgAva = (x, y) => `translate3d(${x / -10}px,${y / -10}px,0)`;
+
 const PhotoRepresentSection = props => {
 
     const [particlesOpt] = useState(
@@ -78,30 +81,30 @@ const PhotoRepresentSection = props => {
     );
 
     return (
-        <section className={styles.wrapper} >
+        <section className={styles.wrapper} id={'head'}>
             <div className={styles.container}>
                 <div className={styles.box}>
-
-                        <div className={styles.cell}>
-                            <p><strong>Привет!</strong></p>
-                            <h1>Меня зовут <span className={styles.inlinePlank}>Никита Левицкий </span></h1>
-                            <h3>
+                    <div className={styles.cell}>
+                        <p><strong>Привет!</strong></p>
+                        <h1>Меня зовут <span className={styles.inlinePlank}>Никита Левицкий </span></h1>
+                        <h3>
                             <ReactTypingEffect staticText={'и'}
                                                text={'я React Front-end разработчик.'}
                                                speed={60}
+                                               eraseSpeed={30}
                             />
-                            </h3>
+                        </h3>
+                    </div>
+                    <div className={styles.cell}>
+                        <div className={styles.holder}>
+                            <animated.div className={styles.imgBox} style={{transform: props.params.xy.to(frameImg)}}/>
+                            <animated.img className={styles.imgCv} src={avatarCv}
+                                          style={{transform: props.params.xy.to(imgAva)}}/>
                         </div>
-                        <div className={styles.cell}>
-                            <div className={styles.holder}>
-                                <animated.div className={styles.imgBox} style={{transform: props.params.xy.to(props.frameImg)}}/>
-                                <animated.img className={styles.imgCv} src={avatarCv} style={{transform: props.params.xy.to(props.imgAva)}}/>
-                            </div>
-                        </div>
-
+                    </div>
                 </div>
             </div>
-            <Particles className={styles.particles} canvasClassName={styles.particlesCanvas} params={particlesOpt} />
+            <Particles className={styles.particles} canvasClassName={styles.particlesCanvas} params={particlesOpt}/>
         </section>
     );
 

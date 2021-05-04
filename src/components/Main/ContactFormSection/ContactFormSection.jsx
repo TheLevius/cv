@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 const ContactFormSection = props => {
     return(
-        <section className={styles.wrapper}>
+        <section className={styles.wrapper} id={'contacts'}>
             <div className={styles.container}>
                 <div className={styles.box}>
                     <Fade bottom delay={300}>

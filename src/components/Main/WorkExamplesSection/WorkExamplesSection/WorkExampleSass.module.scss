@@ -31,7 +31,6 @@
         background-color: rgba(0, 0, 0, 0.8);
       }
     }
-
     .btnWatch {
       position: absolute;
       display: block;
@@ -49,8 +48,16 @@
         min-width: 8rem;
       }
     }
-
   }
+
+  .imgWatchFocus {
+
+    &::before {
+
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
   .description {
     padding: 2.5rem 2rem 3rem;
     &>a {
