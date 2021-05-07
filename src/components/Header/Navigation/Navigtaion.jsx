@@ -12,19 +12,20 @@ const Navigation = props => {
 
     const listItems = items.map((el, i) => {
         return (
-            <li className={styles.item} key={'' + i}>
+            <li className={props.burgerNav ? `${styles.item} ${styles.itemBurger}` : `${styles.item}`} key={'' + i}>
                 <Link
-                    className={styles.linkcell}
+                    className={props.burgerNav ? `${styles.linkcell} ${styles.linkcellBurger}` : `${styles.linkcell}`}
                     activeClass={styles.activeNavItem}
                     to={el.href}
                     spy={true}
                     smooth={true}
                     hashSpy={true}
-                    offset={0}
+                    offset={-50}
                     duration={400}
                     delay={0}
                     isDynamic={true}
                     ignoreCancelEvents={false}
+                    onClick={props.burgerHandler}
                 >
                     {el.item}
                 </Link>

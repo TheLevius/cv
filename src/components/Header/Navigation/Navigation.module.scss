@@ -1,9 +1,10 @@
 @import './src/common/styles/sass/variables';
 
 .wrapper {
+    margin: 15% 0 0;
     .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-end;
         padding: 0 0.8rem;
@@ -12,17 +13,21 @@
         color: $textColor;
         list-style: none;
         .item {
-            margin: 0 5% 0 0;
+            display: block;
+            margin: 0;
             padding: 0;
             overflow: hidden;
             line-height: 0;
+            transition: 300ms;
             &:last-child {
-                margin-right: 1.6rem;
+                margin-right: 0;
             }
+
             .linkcell {
                 position: relative;
-                display: block;
-                padding: 0.4rem 0;
+                display: inline-block;
+                height: 0;
+                padding: 0;
                 border-bottom: 0.1rem solid transparent;
                 font: normal 400 1.6rem/1 Jost, sans-serif;
                 color: $menuTextColor;
@@ -36,7 +41,8 @@
                     color: $textColor;
                     border-color: $primaryColor;
                 }
-                &:active, .activeNavItem {
+                &:active {
+                    border-color: $primaryColor;
                     color: $activeLinkColor;
                 }
                 &:hover {
@@ -44,7 +50,22 @@
                     color: $textColor;
 
                 }
+
             }
+            .linkcellBurger {
+                height: auto;
+                font-size: 2rem;
+                line-height: 1;
+                padding: 0.4rem 0;
+                margin: 0.8rem 0;
+
+            }
+            .activeNavItem {
+                border-color: $primaryColor;
+            }
+        }
+        .itemBurger {
+            padding: 0.8rem 0;
         }
     }
 

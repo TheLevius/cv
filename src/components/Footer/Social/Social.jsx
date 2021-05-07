@@ -6,7 +6,7 @@ const Social = (props) => {
     return(
       <div className="Social block">
           <div className={styles.wrapper}>
-                <a className={styles.iconLink} href={`${props.info.baseUrl}${props.info.socialId}`} target={'_blank'}>
+                <a className={styles.iconLink} href={`${props.info.baseUrl}${props.info.socialId}`} target={'_blank'} rel={'noopener'}>
                     <FontAwesomeIcon icon={props.info.faIconName}/>
                 </a>
           </div>

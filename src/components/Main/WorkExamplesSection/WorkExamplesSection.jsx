@@ -44,9 +44,7 @@ const WorkExamplesSection = () => {
                         <SectionHeader headerText={'My Works'}/>
                     </Fade>
                     <div className={styles.workWrapper}>
-
                         {workExamplesList}
-
                     </div>
                 </div>
             </div>

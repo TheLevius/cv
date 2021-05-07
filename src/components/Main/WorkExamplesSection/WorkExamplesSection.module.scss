@@ -8,11 +8,13 @@
             .workWrapper {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: space-evenly;
                 align-items: stretch;
                 padding: 3rem 0 0;
                 &>div {
-                    flex-basis: 42%;
+                    flex-basis: 100%;
+                    margin: 1.6rem;
                     background-color: #252527;
                 }
             }
