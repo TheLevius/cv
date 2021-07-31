@@ -3,10 +3,9 @@
         max-width: 128rem;
         margin: 0 auto;
         .box {
-            padding: 6.4rem 0;
+            padding: 8rem 0;
             overflow: hidden;
             .skillsWrapper {
-
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -15,8 +14,24 @@
                 align-content: flex-start;
                 >div {
                     flex-basis: 100%;
-                    padding: 0.8rem 0.8rem 1.6rem;
-                    margin: 0 0.4rem 1.6rem;
+                    padding: 1.6rem;
+                    margin: 1.6rem 0;
+                }
+            }
+            @media screen and (min-width: 480px) and (max-width: 959px){
+                .skillsWrapper {
+                    >div {
+                        width: 50%;
+                        flex-basis: auto;
+                    }
+                }
+            }
+            @media screen and (min-width: 960px) {
+                .skillsWrapper {
+                    >div {
+                        width: 33.33%;
+                        flex-basis: auto;
+                    }
                 }
             }
         }

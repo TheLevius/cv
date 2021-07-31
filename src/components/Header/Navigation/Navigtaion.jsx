@@ -10,9 +10,15 @@ const Navigation = props => {
         {item:'Контакты', href: 'contacts'}
         ];
 
-    const listItems = items.map((el, i) => {
+    const onClickHandle = () => {
+        if (props.dimension < 960) {
+            props.burgerHandler()
+        }
+    }
+
+    const listItems = items.map((el) => {
         return (
-            <li className={props.burgerNav ? `${styles.item} ${styles.itemBurger}` : `${styles.item}`} key={'' + i}>
+            <li className={props.burgerNav ? `${styles.item} ${styles.itemBurger}` : `${styles.item}`} key={el.href}>
                 <Link
                     className={props.burgerNav ? `${styles.linkcell} ${styles.linkcellBurger}` : `${styles.linkcell}`}
                     activeClass={styles.activeNavItem}
@@ -25,14 +31,13 @@ const Navigation = props => {
                     delay={0}
                     isDynamic={true}
                     ignoreCancelEvents={false}
-                    onClick={props.burgerHandler}
+                    onClick={onClickHandle}
                 >
                     {el.item}
                 </Link>
             </li>
         )
     });
-
     return (
         <nav className={styles.wrapper}>
             <ul className={styles.container}>

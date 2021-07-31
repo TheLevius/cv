@@ -11,7 +11,7 @@ const Button = (props) => {
                 onBlur={props.onBlur ? (e)=>(props.onBlur(e)) : null}
                 id={props.buttonId || null}
                 form={props.buttonForm || null}>
-            {props.text}
+            {props.children}
         </button>
     )
 }

@@ -8,19 +8,13 @@ const Header = (props) => {
     const [dimension, setDimension] = useState(window.innerWidth)
 
     const handlerLog = () => {
-
         setDimension(window.innerWidth);
-
     }
 
     useEffect(()=>{
 
         window.addEventListener('resize', handlerLog);
-
-        console.log('подписали ' + dimension + 'px')
-
             return ()=> window.removeEventListener('resize', handlerLog)
-
     }, []);
 
     const [burgerNav, setBurgerNav] = useState(false);
@@ -29,14 +23,13 @@ const Header = (props) => {
 
     return (
         <header className={styles.wrapper}>
-            {console.log(' значение окна' + dimension)}
             {dimension < 960 && (
                 <button className={styles.burgerBtn} onClick={burgerHandler}>
                     {burgerNav ?  <FontAwesomeIcon icon={faTimes}/> : <FontAwesomeIcon icon={faBars}/>}
                 </button>
             )}
             <div className={burgerNav ? `${styles.container} ${styles.containerBurger}` : `${styles.container}`}>
-                <Navigation burgerNav={burgerNav} burgerHandler={burgerHandler}/>
+                <Navigation burgerNav={burgerNav} dimension={dimension} burgerHandler={burgerHandler}/>
             </div>
         </header>
     );

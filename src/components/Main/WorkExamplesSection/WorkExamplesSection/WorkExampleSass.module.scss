@@ -4,8 +4,9 @@
   text-align: left;
   font: normal normal 1.6rem/1.2 Rubick, sans-serif;
   .imgWatch {
-    position: relative;
     display: flex;
+    justify-content: center;
+    position: relative;
     width: 100%;
     height: auto;
     margin: 0;
@@ -33,17 +34,22 @@
     }
     .btnWatch {
       position: absolute;
-      display: block;
       height: 3.3rem;
       top: 0;
-      right: 0;
       bottom: 0;
-      left: 0;
       margin: auto;
       border: none;
       padding: 0.9rem 10% 2.3rem;
       line-height: 1;
       text-shadow: 2px 0px 0px #1174ee;
+      > a {
+        color: #fff;
+        text-decoration: none;
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
       &::after {
         min-width: 8rem;
       }

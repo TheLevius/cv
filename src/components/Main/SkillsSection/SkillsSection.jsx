@@ -14,32 +14,27 @@ const SkillsSection = () => {
 
     const skills = [
         {skill: 'REACT',
-         description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.' +
-                'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+         description: 'React это декларативная, эффективная и гибкая Javascript-библиотека для построения пользовательских интерфейсов.',
          skillIcon: reactIcon
         },
         {skill: 'REDUX',
-         description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+         description: 'Универсальный, предсказуемый менеджер состояния для Javascript приложений.',
          skillIcon: reduxIcon
         },
         {skill: 'TYPESCRIPT',
-         description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true' +
-                ' generator on the Internet. It uses a dictionary of over 200 Latin words',
+         description: 'Является строгим синтаксическим надмножеством Javascript и добавляет языку опционально явную типизацию',
          skillIcon: typescriptIcon
         },
         {skill: 'CSS',
-         description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true' +
-                ' generator on the Internet. It uses a dictionary of over 200 Latin words',
+         description: 'формальный язык описания внешнего вида документа',
          skillIcon: css3Icon
         },
         {skill: 'HTML',
-         description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true' +
-                ' generator on the Internet. It uses a dictionary of over 200 Latin words',
+         description: 'язык гипертекстовой разметки',
          skillIcon: html5Icon
         },
         {skill: 'SASS',
-            description: 'All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true' +
-                ' generator on the Internet. It uses a dictionary of over 200 Latin words',
+            description: 'Метаязык на основе CSS, предназначенный для увеличения уровня абстракции CSS-кода и упрощения файлов каскадных таблиц стилей.',
             skillIcon: sassIcon
         }
     ];

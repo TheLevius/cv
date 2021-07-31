@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from './WorkExampleSass.module.scss'
 import Button from '../../../../common/components/button/Button';
 import Fade from 'react-reveal/Fade';
+import {NavLink} from 'react-router-dom';
 
 const WorkExamples = (props) => {
 
@@ -14,7 +15,9 @@ const WorkExamples = (props) => {
 
             <div className={styles.container}>
                 <div className={`${styles.imgWatch} ${btnState.focus ? styles.imgWatchFocus : ''}`} style={{backgroundImage: `url(${props.workExamples.img})`}}>
-                    <Button className={styles.btnWatch} type={'button'} text={'Смотреть'} onFocus={onBtnFocus} onBlur={onBtnBlur}/>
+                    <Button className={styles.btnWatch} type={'button'} onFocus={onBtnFocus} onBlur={onBtnBlur} children={
+                        <a href={props.workUrl}>Смотреть</a>
+                    } />
                 </div>
                 <Fade bottom duration={props.duration} delay={props.delay}>
                 <div className={styles.description}>
